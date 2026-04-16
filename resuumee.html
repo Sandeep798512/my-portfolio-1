@@ -96,6 +96,66 @@
             font-weight: bold;
             width: 150px;
         }
+
+.link-group a {
+    display: block;      /* vertical line me aa jayega */
+    margin: 0;           /* extra gap remove */
+    padding: 0;
+    line-height: 1.2;    /* tight spacing */
+    font-size: 13px;
+}
+
+
+
+
+.link-group {
+    display: flex;
+    flex-direction: column;   /* upar-niche */
+    align-items: flex-end;    /* right side align */
+}
+
+.link-group a {
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+
+
+
+/* Remove unwanted gaps */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 8px 0 4px 0;   /* upar aur niche ka gap control */
+}
+
+p {
+    margin: 3px 0;         /* paragraph gap kam */
+    font-size: 13px;
+}
+
+.section-content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Skills section spacing fix */
+.skills-table {
+    margin: 3px 0;
+}
+
+.skills-table td {
+    padding: 1px 0;
+}
+
+
+
+
     </style>
 </head>
 
@@ -203,81 +263,114 @@ of High School and Intermediate Education, Uttar Pradesh.</span>
     <div class="section-content">
 
         <!-- Project 1 -->
-        <div class="project-item">
-            <div class="item-header">
-                <span>Personal Portfolio Website</span>
-                <span style="display: flex; flex-direction: column; align-items: flex-end;">
-                    <a href="https://sandeep798512.github.io/my-portfolio-1/" target="_blank">Live Demo</a>
-                    <a href="https://github.com/Sandeep798512/my-portfolio-1" target="_blank">GitHub Repo</a>
-                </span>
-            </div>
-            <div class="item-sub">
-                <span>Tech Stack: HTML, CSS, JavaScript, GitHub Pages</span>
-            </div>
-            <ul>
-                <li>Built a <strong>responsive portfolio website</strong> to showcase projects and skills.</li>
-                <li>Implemented modern UI with mobile-first design and optimized performance.</li>
-                <li>Deployed using <strong>GitHub Pages</strong> with integrated links.</li>
-            </ul>
-        </div>
+       <div class="project-item">
 
+    <div class="item-header">
+        <span>
+            Personal Portfolio Website 
+            (<a href="https://sandeep798512.github.io/my-portfolio-1/" target="_blank">Live Demo</a>)
+        </span>
+    </div>
+
+    <div class="item-sub">
+        <span>Tech Stack: HTML, CSS, JavaScript, GitHub Pages</span>
+    </div>
+
+    <ul>
+        <li>
+            Built a fully responsive portfolio website to showcase projects, technical skills, and achievements with a clean and user-friendly interface.
+        </li>
+        <li>
+            Designed and implemented a modern UI using a mobile-first approach, improving accessibility and overall user experience across devices.
+        </li>
+        <li>
+            Optimized performance and deployed using GitHub Pages, integrating project links and contact features for better usability 
+            (<a href="https://github.com/Sandeep798512/my-portfolio-1" target="_blank">GitHub Repo</a>)
+        </li>
+    </ul>
+
+</div>
         <!-- Project 2 -->
         <div class="project-item">
-            <div class="item-header">
-                <span>Movie Recommendation System (MovieMatrix)</span>
-                <span>
-                    <a href="https://sandeep798512.github.io/movie-recommendation-system/" target="_blank">
-                        GitHub Repo
-                    </a>
-                </span>
-            </div>
-            <div class="item-sub">
-                <span>Tech Stack: HTML, CSS, JavaScript, OMDb API</span>
-            </div>
-            <ul>
-                <li>Developed a <strong>movie recommendation system</strong> using real-time API data.</li>
-                <li>Implemented <strong>dynamic search with debounce</strong> for performance optimization.</li>
-                <li>Integrated <strong>OMDb API</strong> to fetch movie details and ratings.</li>
-            </ul>
-        </div>
 
+    <div class="item-header">
+        <span>
+            Movie Recommendation System (MovieMatrix) 
+            (<a href="https://sandeep798512.github.io/movie-recommendation-system/" target="_blank">Live Demo</a>)
+        </span>
+    </div>
+
+    <div class="item-sub">
+        <span>Tech Stack: HTML, CSS, JavaScript, OMDb API</span>
+    </div>
+
+    <ul>
+        <li>
+            Developed a dynamic movie recommendation system using real-time API integration to fetch and display updated movie data.
+        </li>
+        <li>
+            Implemented optimized search functionality with debounce technique, reducing unnecessary API calls and improving performance.
+        </li>
+        <li>
+            Integrated OMDb API to display movie details, ratings, and posters with a responsive and interactive user interface 
+            (<a href="https://github.com/Sandeep798512/movie-recommendation-system" target="_blank">GitHub Repo</a>)
+        </li>
+    </ul>
+
+</div>
         <!-- Project 3 -->
         <div class="project-item">
-            <div class="item-header">
-                <span>Hospital Management System</span>
-                <span>
-                    <a href="https://github.com/Sandeep798512/sandeep-hospital-management" target="_blank">
-                        GitHub Repo
-                    </a>
-                </span>
-            </div>
-            <div class="item-sub">
-                <span>Tech Stack: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</span>
-            </div>
-            <ul>
-                <li>Built a <strong>hospital management system</strong> for patient and appointment handling.</li>
-                <li>Implemented <strong>role-based access control</strong> (Admin, Doctor, Receptionist).</li>
-                <li>Used <strong>Node.js + MongoDB</strong> for backend and database.</li>
-            </ul>
-        </div>
 
+    <div class="item-header">
+        <span>
+            Hospital Management System 
+            (<a href="https://sandeep798512.github.io/sandeep-hospital-management/" target="_blank">Live Demo</a>)
+        </span>
+    </div>
+
+    <div class="item-sub">
+        <span>Tech Stack: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</span>
+    </div>
+
+    <ul>
+        <li>
+            Built a full-stack hospital management system to efficiently manage patient records, appointments, and administrative workflows.
+        </li>
+        <li>
+            Implemented secure role-based access control for Admin, Doctor, and Receptionist to ensure proper data handling and authorization.
+        </li>
+        <li>
+            Developed backend using Node.js and managed data with MongoDB, ensuring scalability and efficient database operations 
+            (<a href="https://github.com/Sandeep798512/sandeep-hospital-management" target="_blank">GitHub Repo</a>)
+        </li>
+    </ul>
+
+</div>
         <!-- Project 4 -->
         <div class="project-item">
-            <div class="item-header">
-                <span>Secure Video Authenticator</span>
-                <span>
-                    <a href="https://sandeep798512.github.io/Secure-Video-Authenticator/">GitHub Repo</a>
-                </span>
-            </div>
-            <div class="item-sub">
-                <span>Tech Stack: Python, Django, SQLite3, HTML5, CSS3</span>
-            </div>
-            <ul>
-                <li>Developed a <strong>secure video platform</strong> using Django MVT architecture.</li>
-                <li>Implemented <strong>authentication & access control</strong> for media security.</li>
-                <li>Designed video upload and storage system with database integration.</li>
-            </ul>
-        </div>
+
+    <div class="item-header">
+        <span>Secure Video Authenticator</span>
+    </div>
+
+    <div class="item-sub">
+        <span>Tech Stack: Python, Django, SQLite3, HTML5, CSS3</span>
+    </div>
+
+    <ul>
+        <li>
+            Developed a secure video management platform using Django MVT architecture for structured and scalable application design.
+        </li>
+        <li>
+            Implemented authentication and access control mechanisms to ensure secure media handling and user data protection.
+        </li>
+        <li>
+            Designed and integrated video upload, storage, and retrieval system with database support for efficient content management 
+            (<a href="https://github.com/Sandeep798512/Secure-Video-Authenticator" target="_blank">GitHub Repo</a>)
+        </li>
+    </ul>
+
+</div>
 
 
 <!-- p5 bank management system-->
