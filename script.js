@@ -214,10 +214,14 @@ function initTypingEffect() {
   if (!typingTarget) return;
 
   const words = [
-    "Full-Stack Applications.",
-    "Scalable Web Apps.",
-    "Modern Web Solutions.",
-    "Computer Science Student."
+   "Software Engineer.",
+  "Computer Science Student.",
+  "Full-Stack MERN Developer.",
+  "Java & JavaScript Developer.",
+  "Building Scalable Web Applications.",
+  "React.js | Node.js | MongoDB.",
+  "Problem Solver and DSA Enthusiast.",
+  "Passionate About Software Development."
   ];
   
   let wordIndex = 0;
